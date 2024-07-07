@@ -1,0 +1,44 @@
+.goodnessseccont img {
+    width: 100%;
+    height: auto; 
+}
+
+.goodnessseccont {
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #efe8e1;
+}
+
+.smbg {
+    background-image: linear-gradient(rgba(10, 77, 123, 0.1), #fff);
+}
+
+.care {
+    background-image: linear-gradient(rgba(110, 69, 143, 0.1), #fff);
+}
+
+.fit {
+    background-image: linear-gradient(#fff7ef, #fff);
+}
+
+.medpro {
+    color: #636362;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+
+.fit .goodnessseccont img {
+    max-height: 200px; 
+}
+
+.navbar .dropdown-menu .dropdown-item.active,
+.navbar .dropdown-menu .dropdown-item:active {
+    background-color: green !important;
+    color: white !important;
+}
+.list-group-item-action:hover {
+    background-color: #d2f4e8; 
+    color: #000000; 
+}

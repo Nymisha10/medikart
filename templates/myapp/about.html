@@ -1,0 +1,48 @@
+{% extends 'myapp/index.html' %}
+{% load static %}
+{% block title %}about{% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'myapp/images/banner.png' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'myapp/images/banner2.png' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'myapp/images/banner3.png' %}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+</div>
+{% endblock banner-slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row container">
+    <p class="fs-4 text-center">
+        MediKart is a highly regarded pharmacy chain in India. 
+        It is the largest and first-ever Omni-Channel Pharmacy network in Asia, 
+        with a vast network of over 5500 outlets strategically located in key locations across the country. 
+        The delivery service covers over 19000+ pin codes, making it highly accessible to people throughout India.
+
+    </p>
+</div>
+
+<br><br>
+<h2 class="text-center">Mission</h2>
+<br>
+<div class="row container">
+    <p class="fs-4 text-center">
+        To make a positive difference in the care of people and the personal care organizations we serve.
+        We provide ethical counsel and support to medical professionals and patients in order to enhance the safe use of medications and medical devices.
+    </p>
+</div>
+
+</div>
+<br><br>
+{% endblock main-content %}

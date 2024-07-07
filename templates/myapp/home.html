@@ -1,0 +1,108 @@
+{% extends 'myapp/index.html' %}
+{% load static %} 
+{% block title %}Home{% endblock title %}
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide mt-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'myapp/images/banner.png' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'myapp/images/banner2.png' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'myapp/images/banner3.png' %}" class="d-block w-100" alt="banner image">
+      </div>
+    </div>
+</div>
+{% endblock banner-slider %}
+
+{% block information %}
+<div class="container mt-5">
+    <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+        <h1>Products</h1>
+        <small class="fs-5">Our Medikart Pharmacy serves as a convenient platform for customers to access a wide range of medications, healthcare products, and wellness essentials.
+             With a focus on customer convenience and health education, the website offers features such as online ordering, prescription refills, and detailed product information.</small>
+    </div>
+</div>
+{% endblock information %}
+
+
+{% block main-content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+            <div class="goodnessseccont buttermilk smbg">
+                <a href="{% url 'category' 'MD' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'myapp/images/medicines.jpg' %}" class="img-responsive center-block" alt="">
+                        <p class="medpro">Medicines</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+            <div class="goodnessseccont buttermilk care">
+            <a href="{% url 'category' 'BA' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'myapp/images/baby care.jpg' %}" class="img-responsive center-block" alt="">
+                        <p class="medpro">Baby Care</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+            <div class="goodnessseccont buttermilk fit">
+                <a href="{% url 'category' 'FS' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'myapp/images/fitness.avif' %}" class="img-responsive center-block" alt="">
+                        <p class="medpro">Fitness Supplements</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+            <div class="goodnessseccont buttermilk smbg">
+                <a href="{% url 'category' 'AY' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'myapp/images/ayurvedic.jpg' %}" class="img-responsive center-block" alt="">
+                        <p class="medpro">Ayurvedic</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+            <div class="goodnessseccont buttermilk care">
+                <a href="{% url 'category' 'DR' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'myapp/images/drink.jpg' %}" class="img-responsive center-block" alt="">
+                        <p class="medpro">Healthy drinks</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+            <div class="goodnessseccont buttermilk fit">
+                <a href="{% url 'category' 'DE' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'myapp/images/device.jpg' %}" class="img-responsive center-block" alt="">
+                        <p class="medpro">Healthcare Devices</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock main-content %}
